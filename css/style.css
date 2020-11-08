@@ -1,0 +1,233 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", "sans-serif";
+}
+:root {
+    --font-sans: "DM Sans", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --size-300: 300;
+    --size-400: 400;
+    --size-500: 500;
+    --size-700: 700;
+    --background: #e5e5e5;
+    --linear-gradient: 207.8deg, #201e1c 16.69%, #f7931a 100%;
+    --bitcoin-orage: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #ffe9d5;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --warm-blackplus1: #282623;
+    --gray: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff;
+}
+
+/*
+- 1 Posicionamiento
+- 2 Modelo de caja
+- 3 Tipografia
+- 4 visuales
+- 5 otros
+*/
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.9deg, #201e1c 16.69%, #f7931a 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 58px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--title-container .header--button {
+    position: absolute;
+    top: 270px;
+    left: calc(50% - 118px);
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/down-arrow.svg');
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('../assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.main-tables-container--grid{
+    width: 202px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1px;
+    
+    border-radiu;
+    
+    
+}
+.main-tables-container--coin{
+    padding: 11px 12px;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #B5B0AC;
+    
+    text-align: left;
+    background-color: var(--just-white);
+}
+.main-tables-container--data{
+    padding: 11px 12px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #757575;
+    background-color: var(--just-white);
+}
+.main-tables-container--grid div:nth-child(1) {
+	border-top-left-radius: 4px;
+}
+
+.main-tables-container--grid div:nth-child(2) {
+	border-top-right-radius: 4px;
+}
+
+.main-tables-container--grid div:nth-child(7) {
+	border-bottom-left-radius: 4px;
+}
+
+.main-tables-container--grid div:nth-child(8) {
+	border-bottom-right-radius: 4px;
+}
+
+.data--down-price{
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    align-self: center;
+    background-image: url('../assets/icons/trending-down.svg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.data--up-price{
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+
+    align-self: center;
+
+    background-image: url('../assets/icons/trending-up.svg');
+}
+.main-tables-container div p{
+    max-width: 202px;
+    margin: 12px auto;
+    padding-left: 12px;
+    text-align: left;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--bitcoin-orage);
+}
+/*
+- 1 Posicionamiento
+- 2 Modelo de caja
+- 3 Tipografia
+- 4 visuales
+- 5 otros
+*/
