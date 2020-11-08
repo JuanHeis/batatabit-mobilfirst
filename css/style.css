@@ -209,10 +209,12 @@ main{
     display: inline-block;
     width: 11px;
     height: 6px;
-
     align-self: center;
 
     background-image: url('../assets/icons/trending-up.svg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .main-tables-container div p{
     max-width: 202px;
