@@ -144,6 +144,9 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    position: relative;
+}
 .main-tables-container--grid{
     width: 202px;
     margin: 0 auto;
@@ -216,7 +219,7 @@ main{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.main-tables-container div p{
+.main-tables-container div .main-tables--title{
     max-width: 202px;
     margin: 12px auto;
     padding-left: 12px;
@@ -225,6 +228,36 @@ main{
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--bitcoin-orage);
+}
+.main-tables--rigth-arrow{
+    display: inline-block;
+    position: absolute;
+
+    right: 20px;
+    top: 50% ;
+    width: 8px;
+    height: 13px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/right-arrow.svg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-tables--date__container{
+    margin-top: 20px;
+    display: inline-block;
+}
+.main-tables--date{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: var(--font-inter);
+    font-size: 1.2rem;
+    color: var(--warm-black);
+    font-weight: 300;
+    background-color: var(--soft-orange);
 }
 /*
 - 1 Posicionamiento
