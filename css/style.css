@@ -156,7 +156,7 @@ main {
     grid-gap: 1px;
 }
 .main-tables-container--coin {
-    padding: 11px 12px;
+    padding: 1.6rem;
 
     font-size: 1.6rem;
     font-weight: 500;
@@ -167,7 +167,7 @@ main {
     background-color: var(--just-white);
 }
 .main-tables-container--data {
-    padding: 11px 12px;
+    padding: 1.6rem 0;
     display: flex;
     justify-content: space-around;
     font-size: 1.4rem;
@@ -286,10 +286,12 @@ main {
 .main-benefits-grid .main-benefits-grid--card {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    max-width: 400px;
     border-radius: 4px;
-
     padding: 1.6rem;
     background-color: var(--warm-blackplus1);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.16);
 }
 
 .main-benefits-grid .main-benefits-grid--card h3 {
@@ -300,13 +302,13 @@ main {
     text-align: left;
 }
 .main-benefits-grid {
+    justify-content: initial;
     margin-top: 3.2rem;
     margin-bottom: 6.4rem;
     display: grid;
-    align-self: center;
     grid-gap: 16px;
-    grid-template-columns: repeat(1, minmax(158px, 600px));
-    grid-auto-rows: repeat(4, 158px);
+    grid-template-columns: repeat(1, autofill);
+    grid-template-rows: repeat(4, 158px);
 }
 
 .main-benefits-grid--clock-icon {
