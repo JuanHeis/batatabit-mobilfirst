@@ -1,4 +1,4 @@
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1023px) {
     .main-benefits-grid {
         justify-content: center;
         margin-top: 3.2rem;
@@ -8,5 +8,13 @@
         grid-gap: 16px;
         grid-template-columns: repeat(2, minmax(158px, 420px));
         grid-template-rows: repeat(2, 158px);
+    }
+
+    .main--prices-card-scroller-container {
+        overflow: hidden;
+    }
+    .main--prices-card-scroller {
+    
+        overflow-x: hidden;
     }
 }
