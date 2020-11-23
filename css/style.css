@@ -40,12 +40,24 @@ html {
 - 4 visuales
 - 5 otros
 */
-
+.batatita-divider{
+    height: 24px;
+    width: 40px;
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 20px);
+    background-image: url("../assets/icons/batata.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 header {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    padding-bottom: 25px;
     width: 100%;
     min-width: 320px;
     height: 334px;
@@ -84,7 +96,7 @@ header img {
 }
 .header--title-container .header--button {
     position: absolute;
-    top: 270px;
+    bottom: -24px;
     left: calc(50% - 118px);
     display: block;
     margin-top: 35px;
@@ -292,6 +304,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-self: center;
+    
     max-width: 400px;
     border-radius: 4px;
     padding: 1.6rem;
@@ -313,7 +326,8 @@ main {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: repeat(1, autofill);
-    grid-template-rows: repeat(4, 158px);
+    grid-template-rows: repeat(4, 200px);
+    
 }
 
 .main-benefits-grid--clock-icon {
@@ -420,9 +434,9 @@ main {
 }
 .main--prices-card {
     position: relative;
-    height: 247px;
     padding: 20px 45px;
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     font-size: 1.4rem;
     margin: 0 20px;
     background-color: var(--just-white);
@@ -463,6 +477,49 @@ left: calc(50% - 112px/2);
     background-position: center;
     background-size: cover;
     vertical-align: middle;
+}
+footer{
+    
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--bitcoin-orage);
+}
+footer .section-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+footer .section-right img{
+    width: 64px;
+}
+footer .section-left{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+footer .section-left ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.section-left li{
+    display: inline;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--font-sans);
+}
+.section-left a:visited{
+
+    color: white;
 }
 
 /*

@@ -2,4 +2,9 @@
     .main--prices-card{
        width: auto;
     }
+    .main-benefits-grid {
+        grid-template-rows: repeat(2, 158px);
+      
+    }
+    
 }
